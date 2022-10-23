@@ -1,22 +1,26 @@
 body {
     background-color: #4F4739;
+    margin: 0;
 }
 
 .container {
     display: grid;
-    margin: 30px 10% 150px 10%;
+    margin: 30px 10% 250px 10%;
     grid-template-columns: 75% auto;
     grid-template-areas:
         'header header'
         'nav nav'
-        'section profile'
-        'section aside';
-    gap: 8% 4%;
+        'news profile'
+        'news aside'
+        'hl hl';
+    gap: 6% 4%;
 }
 
 header {
     grid-area: header;
     margin: 0 8% -2% 8%;
+
+    color: white;
 }
 
 nav {
@@ -54,6 +58,7 @@ nav ul {
 
 .profile {
     display: grid;
+    grid-area: profile;
     grid-template-columns: 20% auto;
     grid-template-areas:
         'profile-img username'
@@ -83,15 +88,22 @@ nav ul {
 
 section {
     background-color: #FFF8E7;
-    grid-area: section;
     padding: 20px;
     border-radius: 16px;
+}
+
+.news {
+    grid-area: news;
+}
+
+.highlighted {
+    grid-area: hl;
 }
 
 section article {
     background-color: #857F72;
     margin: 20px;
-    padding: 20px;
+    padding: 8px 20px;
     border-radius: 16px;
     border-style: solid;
     border-color: #252525;
