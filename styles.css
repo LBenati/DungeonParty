@@ -1,147 +1,73 @@
-body {
-    background-color: #4F4739;
-    margin: 0;
+:root {
+    --primary-color: #FFF8E7;
+    --secondary-color: #857F72;
+    --btn-color: #252525;
+    --bg-color: #4F4739;
+    --footer-color: #252421;
 }
 
-.container {
-    display: grid;
-    margin: 30px 10% 250px 10%;
-    grid-template-columns: 75% auto;
-    grid-template-areas:
-        'header header'
-        'nav nav'
-        'news profile'
-        'news aside'
-        'hl hl';
-    gap: 6% 4%;
+body {
+    background-color: var(--bg-color);
 }
 
 header {
-    grid-area: header;
-    margin: 0 8% -2% 8%;
-
     color: white;
 }
 
 nav {
-    background-color: #FFF8E7;
-    grid-area: nav;
-    padding-bottom: 0px;
+    background-color: var(--primary-color);
     border-radius: 16px;
 }
 
 nav ul {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-        'home groups about contact';
-    gap: 75px;
+    padding: 0;
     list-style: none;
     font-size: larger;
-    margin: 10px 25% 10px 20px;
 }
-
-.home-btn {
-    grid-area: home;
-}
-.group-btn {
-    grid-area: groups;
-}
-.about-btn {
-    grid-area: about;
-}
-.contact-btn {
-    grid-area: contact;
-}
-
 
 .profile {
-    display: grid;
-    grid-area: profile;
-    grid-template-columns: 20% auto;
-    grid-template-areas:
-        'profile-img username'
-        'profile-img lvl'
-        'xp-bar xp-bar';
-
-    background-color: #FFF8E7;
-    padding: 20px;
+    background-color: var(--primary-color);
     border-radius: 16px;
-}
-
-.profile-img {
-    grid-area: profile-img;
-}
-
-.username {
-    grid-area: username;
-}
-
-.lvl {
-    grid-area: lvl;
-}
-
-.xp-bar {
-    grid-area: xp-bar;
 }
 
 section {
-    background-color: #FFF8E7;
-    padding: 20px;
+    background-color: var(--primary-color);
     border-radius: 16px;
-}
-
-.news {
-    grid-area: news;
-}
-
-.highlighted {
-    grid-area: hl;
 }
 
 section article {
-    background-color: #857F72;
-    margin: 20px;
-    padding: 8px 20px;
+    background-color: var(--secondary-color);
     border-radius: 16px;
     border-style: solid;
-    border-color: #252525;
+    border-color: var(--btn-color);
     color: white;
 }
 
 aside {
-    background-color: #FFF8E7;
-    grid-area: aside;
-
-    padding: 20px;
+    background-color: var(--primary-color);
     border-radius: 16px;
 }
 
-aside article {
-    margin: 20px 0;
+footer {
+    background-color: var(--footer-color);
+    color: white;
 }
 
-footer {
-    background-color: #252421;
-    padding: 20px 5%;
-
-    color: white;
+.flex-direction-column {
+    flex-direction: column;
 }
 
 /* BUTTONS */
 .btn {
     color: black;
     font-size: 18px;
-
-    padding: 8px 30px;
     border-radius: 50px;
 
-    cursor: pointer;
+    transition: 0.25s ease-in;
 }
 
 .btn:hover {
-    background-color: #252525;
+    background-color: var(--btn-color);
     color: white;
 }
 
@@ -157,4 +83,10 @@ footer {
 
 .text-right {
     text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+    .btn {
+        padding: 6px 32px;
+    }
 }
