@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 
+:root {
+    --primary-color: #FFF8E7;
+    --secondary-color: #857F72;
+    --btn-color: #252525;
+    --bg-color: #4F4739;
+    --footer-color: #252421;
+}
+
 *{
     padding:0;
     margin:0;
@@ -29,6 +37,7 @@ grid-area: logo;
 padding-left: 25%;
 font-size: 40px;
 text-shadow: 50%; 
+color: white;
 
 
 
@@ -50,13 +59,13 @@ text-shadow: 50%;
     
 .form{
     grid-area: form;
-   background-color: rgb(0, 0, 0);
+   background-color: var(--primary-color);
     border-radius: 10px;
     padding: 60px;
     width: min-content;
     font-size: 0.8em;
     padding: 12%;
-    color: rgb(255, 255, 255);
+    color: black;
     
 }
 
