@@ -1,0 +1,632 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Container */
+.container
+{
+    background-color: rgb(85, 70, 61);
+    display: grid;
+    min-height: 100vh;
+    padding: 2%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header header'
+        'nav nav'
+        'news aside'
+        'news aside'
+        'des des'
+        'footer footer'
+     ;
+     
+    gap: 1%;
+}
+
+
+/* DungeonParty */
+.logo_page
+{
+    
+    grid-area: header;
+    height: 50%;
+    margin: 5%;
+}
+
+.logo_text{
+   
+   font-size: 45px;
+   color: aliceblue;
+}
+
+
+/* navegador das paginas */
+.navegar_page
+{
+    background-color: rgb(202, 208, 208);
+    height: 45%;
+    padding: 1%;
+    border-radius: 15px;
+    grid-area: nav;
+
+
+}
+
+.navegar_list
+{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    
+}
+
+.itens
+{
+    padding: 1%;
+    margin-left: 45px;
+    border-radius: 15px;
+    color: black;
+}
+
+.itens:hover
+{
+    background-color: rgb(34, 29, 20);
+}
+
+
+/* sesao principal de conteudo */
+.section_noticias
+{
+    background-color: antiquewhite;
+    height: 100%;
+    padding: 1%;
+    border-radius: 15px;
+    grid-area: news;
+    
+}
+
+.noticias
+{
+    background-color: rgb(134, 129, 129);
+    height: auto;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 5%;
+    align-items: center;
+    
+}
+
+img
+{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+
+
+/* titulo da pagina */
+.titulo_principal
+{
+    font-size: 25px;  
+}
+.titulo_principal:hover
+{
+    background-color: rgba(36, 30, 30, 0);  
+}
+
+.titulo
+{
+    font-size: 35px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    letter-spacing:normal;
+    line-height: 45px;
+    color: azure;
+}
+
+p{
+    text-align: center;
+    letter-spacing:normal;
+    
+}
+
+
+
+/* secao do usuario perfil e membros */
+.aside_container
+{
+    
+    grid-area: aside;
+    grid-row: aside;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 0;
+    grid-template-rows: 2fr 25fr;
+    grid-template-areas: 
+        'perfil perfil'
+        'view view'   
+     ;
+    
+}
+
+
+/* area perfil */
+.perfil_usuario
+{
+    background-color: antiquewhite;
+    height: 95%;
+    border-radius: 15px;
+    grid-area: perfil;
+    display: grid;
+    grid-column: 5fr 3fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    'perfil level'
+    'perfil level'
+    'usuario usuario';
+ 
+}
+
+.profil-img
+{
+    margin: 5%;
+    width: 55%;
+    height: 55%;
+    grid-area: perfil;
+  
+}
+
+.nome_usuario
+{   
+    padding-left: 10px;
+    margin-bottom: 10%;
+    grid-area: usuario;
+}
+
+.lvl_usuario
+{
+    margin-top: 10%;
+    grid-area: level;
+}
+
+
+/* secao de propaganda e lista de menbros */
+.area_view
+{
+    background-color: antiquewhite;
+    height: 65%;
+    grid-area: view;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+ 
+}
+
+.propaganda
+{
+    margin: 2%;
+}
+
+.img_propaganda
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.usuario_online
+{
+  color: darkgreen;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+.lista_amigos
+{
+    background-color: rgb(122, 115, 115);
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.titulo_lista
+{
+    color: black;
+    letter-spacing:normal;
+    line-height: 45px;
+
+}
+
+.order_list
+{
+    color: black;
+    letter-spacing:normal;
+    line-height: 45px;
+    padding: 25px;
+}
+
+.items_list
+{
+    color: black;
+    
+}
+
+
+.lista_grupos
+{
+    background-color: rgb(122, 115, 115);
+    border-radius: 5px;
+    margin: 2%;
+}
+.lista_jogos
+{
+    background-color: rgb(122, 115, 115);
+    border-radius: 5px;
+    margin: 2%;
+}
+
+
+/* secao dos destaques */
+.destaque_container
+{
+    background-color: antiquewhite;
+    width: 98%;
+    padding: 1%;
+    grid-area: des;
+    border-radius: 15px;
+}
+
+.noticias_destaque
+{
+    background-color: rgb(122, 115, 115);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 5%;
+    align-items: center;
+
+}
+
+
+/* secao fianl de rodape */
+footer
+{
+ background-color: rgb(53, 50, 45);
+ grid-area: footer;
+ grid-column: footer;
+ align-items: center;
+}
+
+.text_rodape
+{
+    color: aliceblue;      
+}
+
+.img_redes
+{
+    width: 100px;
+    margin-left: 2%;
+    padding: 5px;
+    
+}
+
+
+/* responsividade */
+
+@media (max-width: 780px) {
+    
+    .container
+    {
+        background-color: rgb(85, 70, 61);
+        display: grid;
+        min-height: 100vh;
+        padding: 2%;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'header header'
+            'nav nav'
+            'aside aside'
+            'news news'
+            'des des'
+            'footer footer'
+         ;
+         
+        gap: 1%;
+    }
+    
+    
+    /* DungeonParty */
+    .logo_page
+    {
+        
+        grid-area: header;
+        text-align: center;
+        height: 50%;
+        margin: 5%;
+    }
+    
+    .logo_text{
+       
+       font-size: 50px;
+       color: aliceblue;
+    }
+
+    .img_icons{
+        width: 25px;
+        height: 25px;
+    }
+    
+    
+    /* navegador das paginas */
+    .navegar_page
+    {
+        background-color: rgb(202, 208, 208);
+        /* height: 45%;
+        padding: 1%; */
+        border-radius: 15px;
+        grid-area: nav;
+    
+    
+    }
+    
+    .navegar_list
+    {
+        display: flex;
+        flex-direction: row;
+        /* gap: 45px; */
+        
+    }
+    
+    .itens
+    {
+        /* padding: 1%; */
+        /* margin-left: 45px; */
+        border-radius: 15px;
+        color: black;
+        font-size: 10px;
+    }
+    
+    .itens:hover
+    {
+        background-color: rgb(34, 29, 20);
+    }
+    
+    
+    /* sesao principal de conteudo */
+    .section_noticias
+    {
+        background-color: antiquewhite;
+        height: 100%;
+        padding: 1%;
+        border-radius: 15px;
+        grid-area: news;
+        
+    }
+    
+    .noticias
+    {
+        background-color: rgb(134, 129, 129);
+        height: auto;
+        border-radius: 15px;
+        margin: 25px;
+        padding: 5%;
+        align-items: center;
+        
+    }
+    
+    img
+    {
+        width: 100%;
+        margin: auto;
+        border-radius: 15px;
+    }
+    
+    
+    
+    
+    /* titulo da pagina */
+    .titulo_principal
+    {
+        
+        font-size: 25px;
+        
+    }
+    
+    .titulo
+    {
+        font-size: 35px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        letter-spacing:normal;
+        line-height: 45px;
+        color: azure;
+    }
+    
+    p{
+        text-align: center;
+        letter-spacing:normal;
+        line-height: 25%;
+        
+        
+    }
+    
+    
+    
+    /* secao do usuario perfil e membros */
+    .aside_container
+    {
+        
+        grid-area: aside;
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 0;
+        grid-template-rows: 2fr 25fr;
+        grid-template-areas: 
+            'perfil perfil'
+            'view view'   
+         ;
+        
+    }
+    
+    
+    /* area perfil */
+    .perfil_usuario
+    {
+        background-color: antiquewhite;
+        height: 45%;
+        border-radius: 15px;
+        grid-area: perfil;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr;
+        grid-template-areas: 
+        'perfil level'
+        'perfil level'
+        'usuario usuario';
+     
+    }
+    
+    .profil-img
+    {
+        grid-area: perfil;
+    }
+    
+    .nome_usuario
+    {  
+        grid-area: usuario;
+    }
+    
+    .lvl_usuario
+    {
+        
+        grid-area: level;
+    }
+    
+    
+    /* secao de propaganda e lista de menbros */
+    .area_view
+    {
+        background-color: antiquewhite;
+        height: 65%;
+        grid-area: view;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+     
+    }
+    
+    .propaganda
+    {
+        margin: 2%;
+    }
+    
+    .img_propaganda
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    
+    .usuario_online
+    {
+      color: darkgreen;
+      text-align: center;
+      font-size: 25px;
+    }
+    
+    
+    
+    .lista_amigos
+    {
+        background-color: rgb(122, 115, 115);
+        border-radius: 5px;
+        margin: 2%;
+    }
+    
+    .titulo_lista
+    {
+        color: black;
+        letter-spacing:normal;
+        line-height: 45px;
+    
+    }
+    
+    .order_list
+    {
+        color: black;
+        letter-spacing:normal;
+        line-height: 45px;
+        padding: 25px;
+    }
+    
+    .items_list
+    {
+        color: black;
+        
+    }
+    
+    
+    .lista_grupos
+    {
+        background-color: rgb(122, 115, 115);
+        border-radius: 5px;
+        margin: 2%;
+    }
+    .lista_jogos
+    {
+        background-color: rgb(122, 115, 115);
+        border-radius: 5px;
+        margin: 2%;
+    }
+    
+    
+    /* secao dos destaques */
+    .destaque_container
+    {
+        background-color: antiquewhite;
+        width: 98%;
+        padding: 1%;
+        grid-area: des;
+        border-radius: 15px;
+    }
+    
+    .noticias_destaque
+    {
+        background-color: rgb(122, 115, 115);
+        border-radius: 15px;
+        margin: 25px;
+        padding: 5%;
+        align-items: center;
+    
+    }
+    
+    
+    /* secao fianl de rodape */
+    footer
+    {
+     background-color: rgb(53, 50, 45);
+     grid-area: footer;
+     grid-column: footer;
+     align-items: center;
+    }
+    
+    .text_rodape
+    {
+        color: aliceblue;      
+    }
+    
+    .img_redes
+    {
+        width: 100px;
+        margin-left: 2%;
+        padding: 5px;
+        
+    }
+
+}

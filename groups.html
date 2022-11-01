@@ -1,78 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dungeon Party</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" >
+    <link rel="stylesheet" href="stily.css" >
     <link rel="icon" type="image/png" href="images/Moon.png" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <header>
-        <h1>Dungeon Party</h1>
-      </header>
+        <header class="logo_page">
+            <img src="" alt=""><h1 class="logo_text">Dungeon Party</h1>
+        </header>
 
-      <nav>
-        <ul>
-          <li class="home-btn btn text-center"><a href="index.html">Início</a></li>
-          <li class="group-btn btn text-center"><a href="groups.html">Grupos</a></li>
-          <li class="about-btn btn text-center"><a href="about.html">Sobre nós</a></li>
-          <li class="contact-btn btn text-center"><a href="cont.html">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="navegar_page">
+            <ul class="navegar_list">
+                <li class="itens"><a href="index.html">Início</a></li>
+                <li class="itens"><a href="groups.html">Grupos</a></li>
+                <li class="itens"><a href="about.html">Sobre nós</a></li>
+                <li class="itens"><a href="cont.html">Contato</a></li>
+            </ul>
+        </nav>
 
-      <section class="news">
-        <h1>Notícias</h1>
-        <article>
-          <h3 class="text-left">[LoL] New Champion: "Teemo 2? Grupos"</h3>
-        </article>
-        <article>
-          <h3 class="text-left">
-            Saída de Emergência:
-            <br />
-            Uma game arte sobre ônibus
-          </h3>
-        </article>
-        <article>
-          <h3 class="text-left">[LOL] New Champion: "Teemo 2?"</h3>
-        </article>
-        <article>
-          <h3 class="text-left">[DnD] Ranger Revisado 2023</h3>
-        </article>
-        <article>
-          <h3 class="text-left">[DP] Procurando por uma party?"</h3>
-        </article>
-      </section>
+        <section class="section_noticias">
+            <h2 class="titulo_principal">GRUPO Notícias</h2>
+            <article class="noticias">
+                <img src="img/1.jpg" alt="">
+                <h3 class="titulo">[LoL] New Champion: "Teemo 2?"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, voluptate eligendi? Labore
+                    distinctio, asperiores, rerum esse neque qui consectetur modi id quo iste alias et magni magnam
+                    perspiciatis necessitatibus quos.</p>
+            </article>
+            <article class="noticias">
+                <img src="img/2.jpg" alt="">
+                <h3 class="titulo"> Saída de Emergência: Uma game arte sobre ônibus</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ipsum earum consequuntur
+                    distinctio vero voluptatem? Voluptates magnam atque aut quidem ullam exercitationem eaque
+                    repellendus, doloribus ratione provident? Tenetur, voluptatum velit.</p>
+            </article>
+            <article class="noticias">
+                <img src="img/3.jpg" alt="">
+                <h3 class="titulo">[LOL] New Champion: "Teemo 2?"</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nobis at ratione perferendis! Nostrum
+                    eum suscipit consequuntur similique illum tempore vel itaque enim ipsam recusandae cum quos,
+                    quisquam sed nulla?</p>
+            </article>
+            <article article class="noticias">
+                <img src="img/4.jpg" alt="">
+                <h3 class="titulo">[DnD] Ranger Revisado 2023</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore accusantium molestiae soluta sed
+                    eius beatae iusto nostrum delectus, et magni, ipsum ex. Veritatis at doloremque inventore! Aliquid
+                    omnis explicabo non.</p>
+            </article>
+            <article class="noticias">
+                <img src="img/5.jpg" alt="">
+                <h3 class="titulo">[DP] Procurando por uma party?"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptate tenetur temporibus
+                    laboriosam expedita repellat iure et commodi omnis accusamus unde libero eveniet, ullam ut nihil
+                    minima, fuga iusto. Obcaecati.</p>
+            </article>
+        </section>
 
-      <section class="highlighted">
-        <h1>Em destaque</h1>
-        <article>
-          <h3 class="text-left"></h3>
-        </article>
-        
-      </section>
+        <aside class="aside_container">
 
-      <div class="profile">
-        <img class="profile-img" src="" alt="" />
-        <h3 class="username text-right">Username</h3>
-        <p class="lvl text-right">lvl. 00</p>
-      </div>
+            <div class="perfil_usuario">
+                <img class="profil-img" src="img/perfil.png" alt="" />
+                <p class="lvl_usuario">lvl. 00</p>
+                <h3 class="nome_usuario">Username</h3>
 
-      <aside>
-        <div class="ads">PROPAGANDA</div>
-        <article>00 pessoas online</article>
-        <article>Lista de amigos</article>
-        <article>Lista de grupos</article>
-      </aside>
+            </div>
+
+            <div class="area_view">
+
+                <div class="propaganda">
+                    <img class="img_propaganda" src="cadastro\img\OcarinaOfTimes.png" alt="">
+                </div>
+
+                <article class="usuario_online">00 pessoas online</article>
+                <article class="lista_amigos">
+                    <h3 class="titulo_lista">Amigos:</h3>
+                    <ul class="order_list">
+                        <li class="items_list">amigos</li>
+                        <li class="items_list">amigos</li>
+                        <li class="items_list">amigos</li>
+                        <li class="items_list">amigos</li>
+                        <li class="items_list">amigos</li>
+                    </ul>
+                </article>
+                <article class="lista_grupos">
+                    <h3 class="titulo_lista">Grupos:</h3>
+                    <ul class="order_list">
+                        <li class="items_list">Discord</li>
+                        <li class="items_list">Discord</li>
+                        <li class="items_list">Discord</li>
+                        <li class="items_list">Discord</li>
+                        <li class="items_list">Discord</li>
+                        
+                    </ul>
+                </article>
+
+                <div class="propaganda">
+                    <img class="img_propaganda" src="cadastro\img\OcarinaOfTimes.png" alt="">
+                </div>
+
+                <article class="lista_jogos">
+                    <h3 class="titulo_lista">Jogos Favoritos:</h3>
+                    <ul class="order_list">
+                        <li class="items_list">Jogo</li>
+                        <li class="items_list">Jogo</li>
+                        <li class="items_list">Jogo</li>
+                        <li class="items_list">Jogo</li>
+                        <li class="items_list">Jogo</li>
+                    </ul>
+                </article>
+                <div class="propaganda">
+                    <img class="img_propaganda" src="cadastro\img\OcarinaOfTimes.png" alt="">
+                </div>
+            </div>
+        </aside>
+
+        <section class="destaque_container">
+            <h2 class="titulo_principal">Em destaque</h2>
+            <article class="noticias_destaque">
+                <img class="img_propaganda" src="cadastro\img\OcarinaOfTimes.png" alt="">
+                <h3 class="titulo"></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla facere, beatae voluptatum fugit
+                    molestiae error natus perferendis tenetur nesciunt non animi aperiam eligendi! Mollitia veniam
+                    temporibus necessitatibus optio? Aperiam.</p>
+            </article>
+
+        </section>
+
+
+        <footer>
+
+            <img class="img_redes" src="img/discordia.png" alt=""><img class="img_redes" src="img/instagram.png" alt=""><img class="img_redes" src="img/linkedin.png" alt="">
+            <p class="text_rodape">Copyright © 2022 - All rights reserved Dungeon Party</p>
+        </footer>
     </div>
+</body>
 
-    <footer>
-      <p class="text-left">
-        Copyright © 2022 - All rights reserved
-        <br />
-        Dungeon Party
-      </p>
-    </footer>
-  </body>
 </html>
