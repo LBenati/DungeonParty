@@ -1,17 +1,13 @@
-body
-{
-    background-color: rgb(0, 0, 0);
-}
 
 /* Container */
 .container
 {
     background-color: rgb(85, 70, 61);
     display: grid;
-    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
     padding: 2%;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas: 
         'header header'
         'nav nav'
@@ -20,8 +16,8 @@ body
         'des des'
         'footer footer'
      ;
-     
-    gap: 1%;
+     gap: 15px;
+   
 }
 
 
@@ -83,6 +79,8 @@ body
     padding: 1%;
     border-radius: 15px;
     grid-area: news;
+    margin-bottom: 15px;
+    
     
 }
 
@@ -102,6 +100,7 @@ img
     width: 100%;
     margin: auto;
     border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 
@@ -110,7 +109,8 @@ img
 /* titulo da pagina */
 .titulo_principal
 {
-    font-size: 25px;  
+    font-size: 25px; 
+    color: #452424; 
 }
 .titulo_principal:hover
 {
@@ -119,15 +119,25 @@ img
 
 .titulo
 {
-    font-size: 35px;
+    font-size: 1.5rem;
     margin-bottom: 15px;
     border-radius: 15px;
     letter-spacing:normal;
     line-height: 45px;
     color: azure;
 }
+.titulo > a
+{
+    color: rgb(251, 245, 245);
+}
+.titulo > a:hover
+{
+    color: rgb(251, 245, 245);
+    text-decoration:underline
+}
 
 p{
+    font-size: 1rem;
     text-align: center;
     letter-spacing:normal;
     
@@ -144,7 +154,7 @@ p{
     display: grid;
     min-height: 100vh;
     grid-template-columns: 0;
-    grid-template-rows: 2fr 25fr;
+    grid-template-rows: 2fr 45fr;
     grid-template-areas: 
         'perfil perfil'
         'view view'   
@@ -157,47 +167,19 @@ p{
 .perfil_usuario
 {
     background-color: antiquewhite;
-    height: 95%;
+    height: 75%;
     border-radius: 15px;
     grid-area: perfil;
-    display: grid;
-    grid-column: 5fr 3fr;
-    grid-row: 1fr 1fr;
-    grid-template-areas: 
-    'perfil level'
-    'perfil level'
-    'usuario usuario';
  
 }
 
-.profil-img
-{
-    margin: 5%;
-    width: 55%;
-    height: 55%;
-    grid-area: perfil;
-  
-}
-
-.nome_usuario
-{   
-    padding-left: 10px;
-    margin-bottom: 10%;
-    grid-area: usuario;
-}
-
-.lvl_usuario
-{
-    margin-top: 10%;
-    grid-area: level;
-}
 
 
 /* secao de propaganda e lista de menbros */
 .area_view
 {
     background-color: antiquewhite;
-    height: 65%;
+    height: 15%;
     grid-area: view;
     border-radius: 15px;
     display: flex;
@@ -275,8 +257,7 @@ p{
 .destaque_container
 {
     background-color: antiquewhite;
-    width: 98%;
-    padding: 1%;
+    width: 100%;
     grid-area: des;
     border-radius: 15px;
     display: grid;
@@ -285,13 +266,14 @@ p{
     grid-template-areas: 
     'gls gls'
     ;
+    margin-top: 15px;
     
 }
 
 .Gls_container{
         grid-area: gls;
         width: 100%;
-        
+        border-radius: 15px;
 }
 
                   

@@ -1,0 +1,66 @@
+.play_container{
+    background-color: rgb(85, 70, 61);
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'nav nav'
+    'new aside'
+    'new aside'
+    'des des'
+    'footer footer'
+    ;
+   gap:15px;
+}
+
+.logo_play{
+    grid-area: header;
+}
+
+.navegar_page{
+    grid-area: nav;
+}
+
+.play_section_noticias{
+    grid-area: new;
+    background-color: antiquewhite;
+    border-radius: 15px;
+   
+}   
+
+.play_titulo_principal{
+    text-align: center;
+    margin-top: 2%;
+    color: brown;
+    
+}
+
+.play_titulo{
+    text-align: center;
+    margin-top: 5px;
+}
+
+button{
+    margin: 5% 50% 0 40%;
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: black;
+    color:aliceblue
+}
+
+button:hover{
+
+    background-image: url(img/escama_btn.jpg);
+    color:aliceblue;
+}
+
+.playr_aside_container{
+    grid-area: aside;
+}
+
+.destaque_container{
+    grid-area: des;
+}
