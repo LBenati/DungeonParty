@@ -48,10 +48,10 @@ header {
     background-color: var(--header-color);
 }
 
-nav {
-    /* background-color: var(--primary-color); */
-    /* border-radius: 16px; */
-}
+/* nav {
+    background-color: var(--primary-color);
+    border-radius: 16px;
+} */
 
 nav ul {
     padding: 0;
