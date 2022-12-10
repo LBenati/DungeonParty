@@ -138,6 +138,11 @@ figure>.logo {
     border-color: var(--btn-color);
     transition: 0.25s ease-in-out;
 }
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
 
 .color-card {
     width: 50px;
