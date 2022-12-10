@@ -5,15 +5,12 @@
 }
 
 :root {
-    /* --primary-color: #FFF8E7; */
-    --primary-color: #FFF8E7;
-    --secondary-color: #e11e43;
+    --primary-color: #00E2BC;
+    --secondary-color: #FF1842;
+    --tertiary-color: #6E2141;
     --btn-color: #252525;
-    /* --bg-color: #4F4739; */
     --bg-color: white;
-    /* --header-color: white; */
-    --header-color: #01E1BC;
-    --footer-color: #252421;
+    --footer-color: #252525;
 
     --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --body-font-family: var(--font-sans-serif);
@@ -28,8 +25,8 @@
 }
 
 ::selection {
-    background: var(--header-color);
-    color: var(--secondary-color);
+    background: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 body {
@@ -45,20 +42,33 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.wordmark {
-    max-width: 15rem;
-    transition: 0.3s ease-in;
+@media (max-width: 768px) {
+    .display-desktop {
+        display: none;
+    }
+
+    .display-mobile {
+        display: block;
+    }
 }
 
-.wordmark:hover {
-    max-width: 15rem;
-    transform: scale(1.05);
+@media (min-width: 768px) {
+    .display-desktop {
+        display: block;
+    }
+
+    .display-mobile {
+        display: none;
+    }
 }
+
+
 
 header {
-    background-color: var(--header-color);
+    background-color: var(--primary-color);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 /* nav {
@@ -95,6 +105,30 @@ nav ul {
     border-radius: var(--border-radius-default);
 } */
 
+.wordmark {
+    max-width: 12rem;
+    transition: 0.3s ease-in;
+}
+
+.wordmark:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    max-width: 3rem;
+    transition: 0.3s ease-in;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+figure>.logo {
+    max-width: 10rem;
+    border-radius: 100%;
+    transition: 0.3s ease-in;
+}
+
 .card {
     background-color: var(--secondary-color);
     width: 75%;
@@ -105,7 +139,16 @@ nav ul {
     transition: 0.25s ease-in-out;
 }
 
-.card:hover {
+.color-card {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.25s ease-in-out;
+}
+
+.card:hover, .color-card:hover {
     transform: scale(1.05);
 }
 
@@ -251,7 +294,7 @@ a {
 }
 
 a:hover {
-    color: var(--header-color);
+    color: var(--primary-color);
 }
 
 
